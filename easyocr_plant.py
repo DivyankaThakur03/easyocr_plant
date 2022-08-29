@@ -32,10 +32,10 @@ print("balhhh ",type(result))
 
 #access the elements of an array in a list
 for i in result:
-    coordinates = i[0][0]
+    coordinates = i[0]
     text = i[1]
     confi = i[2]
 
 print(result)
 
-print("coordinates : {}, text : {}, confi : {}".format(coordinates, text, confi))
+print("coordinates : {}, text : {}, confi : {}".format(type(coordinates), type(text), type(confi)))
