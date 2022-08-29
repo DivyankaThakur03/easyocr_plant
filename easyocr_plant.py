@@ -26,9 +26,14 @@ reader = easyocr.Reader(['en'])
 result = reader.readtext(sharpen)
 print("balhhh ",type(result))
 
-print("coordinates : {}, text : {}, confi : {}".format(result[0][0], result[1], result[2]))
+coordinates, text, confi
+
 #access the elements of an array in a list
-#for i in result:
-#    print("blahh",i[0])
-#print("length ",len(result))
-#print(result)
+for i in result:
+    coordinates = i[0][0]
+    text = i[1]
+    confi = i[2]
+
+print(result)
+
+print("coordinates : {}, text : {}, confi : {}".format(coordinates, text, confi))
