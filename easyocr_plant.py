@@ -3,6 +3,10 @@ import easyocr
 import numpy as np
 import argparse
 
+coordinates = ''
+text = ''
+confi = ''
+
 parser = argparse.ArgumentParser(description='Take image path for ocr')
 parser.add_argument('path', metavar='N',
                     help='path of the image')
@@ -25,8 +29,6 @@ sharpen = cv2.filter2D(img, -1, sharpen_kernel)
 reader = easyocr.Reader(['en'])
 result = reader.readtext(sharpen)
 print("balhhh ",type(result))
-
-coordinates, text, confi
 
 #access the elements of an array in a list
 for i in result:
