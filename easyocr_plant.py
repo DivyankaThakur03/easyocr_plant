@@ -29,7 +29,7 @@ if flag==0:
   sharpen_kernel90 = np.array([[-1,-1,-1], [-1,9,-1], [-1,-1,-1]])
   sharpen90 = cv2.filter2D(img90, -1, sharpen_kernel90)
   reader90 = easyocr.Reader(['en'])
-  result90 = reader.readtext(sharpen90)
+  result90 = reader90.readtext(sharpen90)
 
 #access the elements of an array in a list
   for i in result90:
@@ -48,7 +48,7 @@ elif flag == 1:
   sharpen_kernel180 = np.array([[-1,-1,-1], [-1,9,-1], [-1,-1,-1]])
   sharpen180 = cv2.filter2D(img180, -1, sharpen_kernel180)
   reader180 = easyocr.Reader(['en'])
-  result180 = reader.readtext(sharpen180)
+  result180 = reader180.readtext(sharpen180)
 
 #access the elements of an array in a list
   for i in result180:
