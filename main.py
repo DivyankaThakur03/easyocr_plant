@@ -36,7 +36,7 @@ if flag== True:
       flag = False
       print("Now the flag is initiated to 1 so it is img180")
 
-else:
+elif flag== False:
     
     if result180 == reader.readtext(img180):
       print("img180 is read")
