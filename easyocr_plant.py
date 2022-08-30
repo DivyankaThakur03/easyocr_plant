@@ -42,13 +42,13 @@ if flag==0:
   if text[:2] == 'GR':
     flag = 0
     print("90 it is")
-  elif text[:] == str([x for x in range(0,5)]):
+  else:
     print("hii")
     flag = 1
     
 elif flag==1:
-  #img180 = cv2.rotate(img, cv2.ROTATE_180)
-  img180 = cv2.rotate(img, cv2.ROTATE_90_CLOCKWISE)
+  img180 = cv2.rotate(img, cv2.ROTATE_180)
+  #img180 = cv2.rotate(img, cv2.ROTATE_90_CLOCKWISE)
   #cv2.imshow("180",img180)
   sharpen_kernel180 = np.array([[-1,-1,-1], [-1,9,-1], [-1,-1,-1]])
   sharpen180 = cv2.filter2D(img180, -1, sharpen_kernel180)
