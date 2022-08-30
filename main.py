@@ -38,7 +38,7 @@ if flag== True:
 
 elif flag == False:
     
-    if result180 = reader.readtext(img180):
+    if result180 == reader.readtext(img180):
       print("img180 is read")
     else:
       print("something is messed")
