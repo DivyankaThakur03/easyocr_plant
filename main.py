@@ -17,12 +17,12 @@ img = cv2.imread(args.path)
 sharpen_kernel = np.array([[-1,-1,-1], [-1,9,-1], [-1,-1,-1]])
 sharpen = cv2.filter2D(img, -1, sharpen_kernel)
 
-flag = 0
+flag = True
 img90 = cv2.rotate(sharpen, cv2.ROTATE_90_CLOCKWISE)
 img180 = cv2.rotate(sharpen, cv2.ROTATE_180)
 reader = easyocr.Reader(['en'])
 
-if flag==0:
+if flag== True:
     result90 = reader.readtext(img90)
   
     for i in result90:
@@ -33,10 +33,10 @@ if flag==0:
     if text[:2] == "GR":
       print("90 it is")
     else:
-      flag = 1
+      flag = False
       print("Now the flag is initiated to 1 so it is img180")
 
-elif flag ==1:
+elif flag != True:
     result180 = reader.readtext(img180)
     print("img180 is read")
     for i in result180:
