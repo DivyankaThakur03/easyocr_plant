@@ -47,7 +47,8 @@ if flag==0:
     flag = 1
     
 elif flag==1:
-  img180 = cv2.rotate(img, cv2.ROTATE_180)
+  #img180 = cv2.rotate(img, cv2.ROTATE_180)
+  img180 = cv2.rotate(img, cv2.ROTATE_90_CLOCKWISE)
   #cv2.imshow("180",img180)
   sharpen_kernel180 = np.array([[-1,-1,-1], [-1,9,-1], [-1,-1,-1]])
   sharpen180 = cv2.filter2D(img180, -1, sharpen_kernel180)
