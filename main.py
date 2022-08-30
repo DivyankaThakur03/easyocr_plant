@@ -38,10 +38,8 @@ if flag== True:
 
 elif flag== False:
     
-    if result180 == reader.readtext(img180):
-      print("img180 is read")
-    else:
-      print("something is messed")
+    result180 = reader.readtext(img180)
+    print("img180 is read")
       
     for i in result180:
       coordinates = i[0]
