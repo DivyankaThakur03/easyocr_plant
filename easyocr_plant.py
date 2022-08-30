@@ -19,13 +19,13 @@ args = parser.parse_args()
 #img = cv2.imread("/home/divya/Downloads/chilli/train/IMG_0344.JPG") #Grade- 2
 
 img = cv2.imread(args.path)
-cv2.imshow("img", img)
+#cv2.imshow("img", img)
 
 flag = 0
 #rotating an image so that the label is clear
 if flag==0:
   img90 = cv2.rotate(img, cv2.cv2.ROTATE_90_CLOCKWISE)
-  cv2.imshow("90", img90)
+  #cv2.imshow("90", img90)
 
 #to sharpen the blurness
   sharpen_kernel90 = np.array([[-1,-1,-1], [-1,9,-1], [-1,-1,-1]])
@@ -47,7 +47,7 @@ if flag==0:
  
 elif flag==1:
   img180 = cv2.rotate(img, cv2.cv2.ROTATE_180)
-  cv2.imshow("180",img180)
+  #cv2.imshow("180",img180)
   sharpen_kernel180 = np.array([[-1,-1,-1], [-1,9,-1], [-1,-1,-1]])
   sharpen180 = cv2.filter2D(img180, -1, sharpen_kernel180)
   reader180 = easyocr.Reader(['en'])
