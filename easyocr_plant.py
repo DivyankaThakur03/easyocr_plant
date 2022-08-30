@@ -42,9 +42,9 @@ if flag==0:
   if text[:2] == 'GR':
     flag = 0
     print("90 it is")
-  elif text[:2] == '1':
+  elif text[:2] == ' ':
     flag = 1
- 
+print("hi") 
 elif flag==1:
   img180 = cv2.rotate(img, cv2.ROTATE_180)
   #cv2.imshow("180",img180)
