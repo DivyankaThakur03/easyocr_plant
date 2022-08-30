@@ -22,7 +22,6 @@ img90 = cv2.rotate(sharpen, cv2.ROTATE_90_CLOCKWISE)
 img180 = cv2.rotate(sharpen, cv2.ROTATE_180)
 
 if flag==0:
-  
   reader = easyocr.Reader(['en'])
   result90 = reader.readtext(img90)
   
@@ -51,15 +50,4 @@ elif flag ==1:
   else:
     print("Sorry - this image is too tough for me")
     
-  
 print("coordinates : {}, text : {}, confi : {}".format(coordinates, text, confi))
-    
-    
-    
-    
-
-
-
-
-
-
