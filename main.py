@@ -34,6 +34,7 @@ if flag==0:
       print("90 it is")
     else:
       flag = 1
+      print("Now the flag is initiated to 1 so it is img180")
 
      
 elif flag ==1:
