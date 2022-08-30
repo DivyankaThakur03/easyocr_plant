@@ -20,9 +20,9 @@ sharpen = cv2.filter2D(img, -1, sharpen_kernel)
 flag = 0
 img90 = cv2.rotate(sharpen, cv2.ROTATE_90_CLOCKWISE)
 img180 = cv2.rotate(sharpen, cv2.ROTATE_180)
+reader = easyocr.Reader(['en'])
 
 if flag==0:
-    reader = easyocr.Reader(['en'])
     result90 = reader.readtext(img90)
   
     for i in result90:
@@ -37,7 +37,6 @@ if flag==0:
 
      
 elif flag ==1:
-    reader = easyocr.Reader(["en"])
     result180 = reader.readtext(img180)
 
     for i in result180:
