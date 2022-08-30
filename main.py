@@ -33,7 +33,7 @@ if flag== True:
     if text[:2] == "GR":
       print("90 it is")
     else:
-      flag == False
+      flag = False
       print("Now the flag is initiated to 1 so it is img180")
 
 else:
