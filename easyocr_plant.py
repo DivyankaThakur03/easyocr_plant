@@ -66,4 +66,4 @@ elif flag==1:
     
 
 print("coordinates : {}, text : {}, confi : {}".format(coordinates, text, confi))
-print(result)
+#print(result)
