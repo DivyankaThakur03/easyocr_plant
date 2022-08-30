@@ -36,10 +36,9 @@ if flag==0:
       flag = 1
       print("Now the flag is initiated to 1 so it is img180")
 
-     
 elif flag ==1:
     result180 = reader.readtext(img180)
-
+    print("img180 is read")
     for i in result180:
       coordinates = i[0]
       text = i[1]
