@@ -42,7 +42,8 @@ if flag==0:
   if text[:2] == 'GR':
     flag = 0
     print("90 it is")
-  elif text[:2] == "":
+  elif text[:2] == "1":
+    print("hii")
     flag = 1
     
 elif flag==1:
