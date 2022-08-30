@@ -12,7 +12,7 @@ parser.add_argument('path', metavar='N',
                     help='path of the image')
 
 args = parser.parse_args()
-
+x = 0
 #img = cv2.imread("/home/divya/Downloads/IMG_0464.JPG") #Grade -1 
 #img = cv2.imread("/home/divya/Downloads/chilli/train/IMG_0372.JPG") #Grade- 4
 #img = cv2.imread("/home/divya/Downloads/chilli/train/IMG_0431.JPG") #Grade- 3
@@ -42,7 +42,7 @@ if flag==0:
   if text[:2] == 'GR':
     flag = 0
     print("90 it is")
-  elif text[:2] == '1' or '2':
+  elif text[:2] == int(x)
     print("hii")
     flag = 1
     
